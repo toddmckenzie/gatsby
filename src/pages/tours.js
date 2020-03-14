@@ -1,11 +1,11 @@
 import React from 'react';
-
+import Layout from '../components/Layout.js';
 
 const Tours = () => {
     return (
-        <div>
+        <Layout>
             Hello from tours
-        </div>
+        </Layout>
     )
 }
 export default Tours;
