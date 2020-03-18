@@ -6,6 +6,7 @@ import { Link } from 'gatsby';
 import { FaRProject } from 'react-icons/fa';
 
 
+
 const Footer = () => {
     return (
        <footer className={styles.footer}>
