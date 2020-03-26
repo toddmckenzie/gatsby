@@ -5,6 +5,7 @@ import Layout from '../components/Layout';
 import SimpleHero from '../components/SimpleHero';
 
 
+
 export default () => 
 <div>
     <Layout>
