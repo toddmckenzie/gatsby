@@ -3,7 +3,7 @@ import React from 'react';
 
 const SimpleHero = ({children}) => {
     return (
-      <div>
+      <div className="defaultHero">
           SimpleHero
       </div>
     )
