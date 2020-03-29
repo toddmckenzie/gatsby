@@ -9,6 +9,9 @@ import SimpleHero from '../components/SimpleHero';
 export default () => 
 <div>
     <Layout>
+    <div>
+        <p>Home</p>
+    </div>
         <p>Welcome</p>
         <SimpleHero />
     </Layout>
