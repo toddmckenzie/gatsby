@@ -10,8 +10,19 @@ module.exports = {
     title: "Backroads",
     description: "Explore awesome worldwide tors & discover what makes them unique.",
     author: "John Doe"
-  }
+  },
+  plugins: [
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `images`,
+      path: `${__dirname}/src/images/`
+    },
+  },
+  `gatsby-plugin-sharp`,
+  `gatsby-transformer-sharp`,
   // plugins: [
   //   'gatsby-plugin-styled-components'
   // ]
-}
+],
+} 
