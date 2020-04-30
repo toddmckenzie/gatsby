@@ -6,6 +6,9 @@
 
 module.exports = {
   /* Your site config here */
+  plugins: [
+    'gatsby-plugin-styled-components'
+  ]
   siteMetadata: {
     title: "Backroads",
     description: "Explore awesome worldwide tors & discover what makes them unique.",
