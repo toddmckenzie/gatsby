@@ -6,4 +6,9 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Backroads",
+    description: "Explore awesome worldwide tors & discover what makes them unique.",
+    author: "John Doe"
+  }
 }
