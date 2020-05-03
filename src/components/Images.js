@@ -5,6 +5,7 @@ import Img from 'gatsby-image';
 import styled from 'styled-components';
 
 //can add grayscale: true if you want black and white photo.
+//fluid fits the container.
 const getImages = graphql`
 {
     fixed:file(relativePath:{eq: "defaultBcg.jpeg"}){
@@ -14,7 +15,7 @@ const getImages = graphql`
       }
     }
     fluid:file(relativePath:{eq:"blogBcg.jpeg"}){
-      childImageSharp{fluid(maxWidth: 300){
+      childImageSharp{fluid{
            ...GatsbyImageSharpFluid_tracedSVG
         }
       }
