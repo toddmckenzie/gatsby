@@ -14,9 +14,8 @@ const getImages = graphql`
       }
     }
     fluid:file(relativePath:{eq:"blogBcg.jpeg"}){
-      childImageSharp{
-        fluid{
-          src
+      childImageSharp{fluid(maxWidth: 300){
+           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
@@ -38,13 +37,14 @@ const Images = () => {
             </article>
             <article>
                 <h3>fluid image</h3>
-                <img src={img} className="basic" />
+                <Img fluid={data.fluid.childImageSharp.fluid}  />
             </article>
         </Wrapper>
     )
 }
 
 const Wrapper = styled.div`
+    display: flex;
     text-align: center;
     text-tranform: capitalize;
     width: 100vw;
@@ -52,6 +52,7 @@ const Wrapper = styled.div`
     article{
         border: 1px solid red;
         padding: 1rem 0;
+        width: 32%
     }
     .basic {
         width: 100%;
