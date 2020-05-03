@@ -4,10 +4,11 @@ import img from '../images/connectBcg.jpeg';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 
+//can add grayscale: true if you want black and white photo.
 const getImages = graphql`
 {
     fixed:file(relativePath:{eq: "defaultBcg.jpeg"}){
-      childImageSharp{fixed(width:300, height:400){
+      childImageSharp{fixed(width:300, height:400){ 
         ...GatsbyImageSharpFixed
       }
       }
