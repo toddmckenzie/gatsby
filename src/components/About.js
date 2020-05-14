@@ -14,12 +14,11 @@ const getAbout = graphql`
     }
 `
  
-
-
 const About = () => {
     const { aboutImage } = useStaticQuery(getAbout);
     return (
         <div>
+            <Img fluid={aboutImage.childImageSharp.fluid} />
             <Img fluid={aboutImage.childImageSharp.fluid} />
         </div>
     )
