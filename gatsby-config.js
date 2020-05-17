@@ -19,7 +19,7 @@ module.exports = {
       path: `${__dirname}/src/images/`
     },
   },
-  {
+  {//contentful
     resolve: `gatsby-source-contentful`,
     options: {
       spaceId: `your_space_id`,
